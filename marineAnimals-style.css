@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(235, 241, 247);
+}
+
+#header{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(62, 62, 195);
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#header-logo{
+    cursor: default;
+    font-size: 28px;
+    font-family: 'Baloo 2';
+    font-weight: 500;
+    color: white;
+}
+
+#nav-right{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-right-button{
+    margin: 0px 4px 0px 4px;
+    padding: 5px 8px 5px 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgba(62, 62, 195,0);
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.nav-right-button:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    border-bottom-color: white;
+}
+
+#separator{
+    height: 30px;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 10px 0px 10px;
+}
+
+#marines-button{
+    border-bottom-color: white;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#content-title{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px 20px 10px 20px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0);
+    border-bottom-color: rgb(62,62,195);
+    text-align: center;
+}
+
+#content-subtitle{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#content-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content-body-row{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    color: rgb(0,0,0);
+    box-shadow: 0px 0px 20px -7.5px currentColor;
+    border-radius: 15px;
+}
+
+#card-crustacean{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/crustacean.jpg);
+}
+
+#card-fishes{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/fishes.jpg);
+}
+
+#card-marinemammals{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/marinemammals.jpg);
+}
+
+#card-echinodermata{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/echinodermata.jpg);
+}
+
+#card-crustacean::before,
+#card-fishes::before,
+#card-marinemammals::before,
+#card-echinodermata::before{
+    transition: 0.5s ease;
+    content: "";
+    background-color: black;
+    background-size: cover;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 15px;
+}
+
+#card-crustacean:hover::before,
+#card-fishes:hover::before,
+#card-marinemammals:hover::before,
+#card-echinodermata:hover::before{
+    transition: 0.5s ease;
+    opacity: 0.6;
+}
+
+.card-content{
+    opacity: 0;
+    transition: 0.5s ease;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+    z-index: 1;
+}
+
+.card-content-title{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-content-body{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card:hover .card-content{
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+#footer{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(62, 62, 195);
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 15px 30px 15px 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#footer-right,
+#footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-left-top{
+    font-family: 'Baloo 2';
+    font-size: 22px;
+}
+
+#footer-right-top{
+    margin-bottom: 5px;
+}
+
+.logo-social{
+    width: 25px;
+    margin: 0px 2px 0px 2px;
+}

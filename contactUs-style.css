@@ -1,0 +1,241 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(235, 241, 247);
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(62, 62, 195, 1);
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#header-logo{
+    cursor: default;
+    font-size: 28px;
+    font-family: 'Baloo 2';
+    font-weight: 500;
+    color: white;
+}
+
+#nav-right{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-right-button{
+    margin: 0px 4px 0px 4px;
+    padding: 5px 8px 5px 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgba(62, 62, 195, 0);
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.nav-right-button:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    border-bottom-color: white;
+}
+
+#separator{
+    height: 30px;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 10px 0px 10px;
+}
+
+#contactus-button{
+    border-bottom-color: white;
+}
+
+#content{
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#contact{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 20px -10px;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Montserrat';
+}
+
+#contact-title{
+    font-size: 26px;
+    font-weight: 500;
+    padding: 0px 10px 10px 10px;
+    border: solid;
+    border-color: rgba(35, 35, 171, 0);
+    border-bottom-color: rgba(62, 62, 195, 1);
+    margin-bottom: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.contact-form-text{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-error{
+    color: red;
+    font-size: 16px;
+}
+
+#contact-form-name,
+#contact-form-text,
+#contact-form-email,
+#contact-form-phonenum,
+#contact-form-message{
+    padding: 10px 8px 10px 8px;
+    min-width: 375px;
+    border: solid 1px;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#contact-form-message{
+    min-height: 200px;
+}
+
+::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+#contact-form-gender{
+    display: flex;
+}
+
+#contact-form-gender-choice{
+    display: flex;
+    margin-right: 10px;
+}
+
+#contact-form-gender-choice:hover{
+    cursor: pointer;
+}
+
+.radio-input{
+    display: none;
+}
+
+.radio-custom{
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(62, 62, 195, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 2.5px;
+}
+
+.radio-custom:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    background-color: rgba(62, 62, 195, 1);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.radio-input:checked + .radio-custom:after{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+#contact-form-button{
+    margin-top: 10px;
+    border: solid 2px;
+    border-radius: 30px;
+    color: rgba(62, 62, 195, 1);
+    background-color: rgba(255, 255, 255, 1);
+    font-family: inherit;
+    font-size: 18px;
+    align-self: center;
+    padding: 10px 30px 10px 30px;
+    transition: 0.5s ease;
+}
+
+#contact-form-button:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(62, 62, 195, 1);
+    background-color: rgba(62, 62, 195, 1);
+    transition: 0.5s ease;
+}
+
+#footer{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(62, 62, 195);
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 15px 30px 15px 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#footer-right,
+#footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-left-top{
+    font-family: 'Baloo 2';
+    font-size: 22px;
+}
+
+#footer-right-top{
+    margin-bottom: 5px;
+}
+
+.logo-social{
+    width: 25px;
+    margin: 0px 2px 0px 2px;
+}

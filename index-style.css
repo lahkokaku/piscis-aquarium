@@ -1,0 +1,179 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/home-banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#header{
+    transition: 0.5s ease;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(62, 62, 195, 0);
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#header:hover{
+    transition: 0.5s ease;
+    background-color: rgba(62, 62, 195, 0.7);
+}
+
+#header-logo{
+    cursor: default;
+    font-size: 28px;
+    font-family: 'Baloo 2';
+    font-weight: 500;
+    color: white;
+}
+
+#nav-right{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-right-button{
+    margin: 0px 4px 0px 4px;
+    padding: 5px 8px 5px 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgba(62, 62, 195, 0);
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.nav-right-button:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    border-bottom-color: white;
+}
+
+#separator{
+    height: 30px;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 10px 0px 10px;
+}
+
+#home-button{
+    border-bottom-color: white;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    padding: 100px 0 100px 0;
+    transition: 0.5s ease;
+}
+
+#banner-title{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#banner-body{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#banner-button{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    text-decoration: none;
+    padding: 15px 30px 15px 30px;
+    color: rgb(255, 255, 255);
+    border: solid 2px;
+    border-color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#banner-button:hover{
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: rgb(146, 146, 255);
+    border-color: rgb(146, 146, 255);
+}
+
+#banner-button-arrow{
+    font-size: 25px;
+    transform: scale(0);
+    transition: 0.5s ease;
+    color: rgb(146, 146, 255);
+    border-color: rgb(146, 146, 255);
+}
+
+#banner-button:hover #banner-button-arrow{
+    transform: scale(1);
+    transition: 0.5s ease;
+}
+
+#footer{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(62, 62, 195, 0.7);
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 15px 30px 15px 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#footer-right,
+#footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-left-top{
+    font-family: 'Baloo 2';
+    font-size: 22px;
+}
+
+#footer-right-top{
+    margin-bottom: 5px;
+}
+
+.logo-social{
+    width: 25px;
+    margin: 0px 2px 0px 2px;
+}

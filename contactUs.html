@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="contactUs-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div id ="header-logo">Piscis Aquarium</div>
+        <div id ="nav-right">
+            <a id ="home-button" class ="nav-right-button" href="index.html">Home</a>
+            <a id ="marines-button" class ="nav-right-button" href="marineAnimals.html">Marine Animals</a>
+            <div id="separator"></div>
+            <a id ="aboutus-button" class ="nav-right-button" href="aboutUs.html">About Us</a>
+            <a id ="contactus-button" class ="nav-right-button" href="contactUs.html">Contact Us</a>
+        </div>
+    </div>
+    <div id ="content">
+        <form action="home.html" id="contact" method="post">
+            <label id="contact-title">Contact Us!</label>
+            <div class="form-group">
+                <label class="contact-form-text" for="contact-form-name">
+                    Name
+                </label>
+                <input name="Name" id="contact-form-name" type="text" placeholder="Wawan Cahyadi">
+                <label class="form-error" id="error-form-name"></label>
+            </div>
+            <div class="form-group">
+                <label class="contact-form-text" for="contact-form-email">
+                    Email
+                </label>
+                <input name="Email" id="contact-form-email" type="email" placeholder="wawan2@gmail.com">
+                <label class="form-error" id="error-form-email"></label>
+            </div>
+            <div class="form-group">
+                <label class="contact-form-text" for="contact-form-phonenum">
+                    Phone Number
+                </label>
+                <input name="phonenum" id="contact-form-phonenum" type="number" placeholder="08817654321">
+                <label class="form-error" id="error-form-phonenum"></label>
+            </div>
+            <div class="form-group">
+                <div class="contact-form-text">
+                    Gender
+                </div>
+                <div id="contact-form-gender">
+                    <label id="contact-form-gender-choice" for="male">
+                        <input type="radio" name="gender" id="male" class="radio-input" value="Male">
+                        <div class="radio-custom"></div>
+                        Male
+                    </label>
+                    <label id="contact-form-gender-choice" for="female">
+                        <input type="radio" name="gender" id="female" class="radio-input" value="Female">
+                        <div class="radio-custom"></div>
+                        Female
+                    </label>
+                </div>
+                <label class="form-error" id="error-form-gender"></label>
+            </div>
+            <div class="form-group">
+                <label class="contact-form-text" for="contact-form-message">
+                    Message
+                </label>
+                <textarea name="Message" id="contact-form-message" placeholder="Enter your message here" rows="10"></textarea>
+                <label class="form-error" id="error-form-message"></label>
+            </div>
+            <button type="submit" id="contact-form-button">Send</button>
+        </form>
+    </div>
+    <div id ="footer">
+        <div id="footer-left">
+            <div id="footer-left-top">Piscis Aquarium</div>
+            <div id="footer-left-bottom">Copyright © 2022</div>
+        </div>
+        <div id="footer-right">
+            <div id="footer-right-top">Join our community!</div>
+            <div id="footer-right-bottom">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="logo-social" src="images/logoInstagram.png" alt="">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="logo-social" src="images/logoFacebook.png" alt="">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img class="logo-social" src="images/logoTwitter.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="contactUs-script.js" defer></script>
+</body>
+</html>
